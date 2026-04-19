@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/t_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <ImageView
+        android:id="@+id/A_Cart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/cart"
+        app:layout_constraintStart_toEndOf="@+id/t_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintVertical_bias="0.01"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userDP"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/john"
+        app:civ_border_width="@dimen/_1sdp"
+        app:civ_border_color="@color/pink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe "
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintVertical_bias="0.35"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintVertical_bias="0.45"
+        >
+
+        <ImageView
+            android:id="@+id/topay"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:src="@drawable/to_pay"/>
+
+        <TextView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/topay"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="To Pay" />
+
+        <ImageView
+            android:id="@+id/to_ship"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:src="@drawable/to_pay" />
+
+        <TextView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/topay"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:gravity="center"
+            android:text="To Ship"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/to_receive"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_180sdp"
+            android:src="@drawable/to_pay"/>
+
+        <TextView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/topay"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_178sdp"
+            android:text="To Receive" />
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/my_card"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/my_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintVertical_bias="0.6"/>
+
+    <ImageView
+        android:id="@+id/my_orders"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/order_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintVertical_bias="0.73"/>
+
+    <ImageView
+        android:id="@+id/Edit_profile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/edit_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintVertical_bias="0.87"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

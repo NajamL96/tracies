@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tracies">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/_tricies"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round_tricies"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tracies">
+        <activity
+            android:name=".SaleItemView"
+            android:exported="true" />
+        <activity
+            android:name=".ViewAll_ItemView"
+            android:exported="true" />
+        <activity
+            android:name=".waitlist_itemView"
+            android:exported="true" />
+        <activity
+            android:name=".favorite_itemView"
+            android:exported="true" />
+        <activity
+            android:name=".ToReceive"
+            android:exported="true" />
+        <activity
+            android:name=".ToShip"
+            android:exported="true" />
+        <activity
+            android:name=".OrderItems"
+            android:exported="true" />
+        <activity
+            android:name=".ToPay"
+            android:exported="true" />
+        <activity
+            android:name=".model.CheckoutActivityJava"
+            android:exported="true" />
+        <activity
+            android:name=".ViewAll"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Bottom_nav"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".order_complete"
+            android:exported="true" />
+        <activity
+            android:name=".my_order"
+            android:exported="true" />
+        <activity
+            android:name=".YourCards"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Profile"
+            android:exported="true" />
+        <activity
+            android:name=".Cart"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ItemView"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Log_in"
+            android:exported="true" />
+        <activity
+            android:name=".Sign_up"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

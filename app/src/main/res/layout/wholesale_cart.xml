@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    app:cardCornerRadius="@dimen/_12sdp"
+    android:layout_margin="@dimen/_10sdp">
+    <LinearLayout
+        android:id="@+id/Wcart_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:clickable="true"
+        >
+
+        <ImageView
+            android:id="@+id/Wshoe"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/shoe"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/Wcart_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Adidas Shoes"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Wcart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="$300"
+                android:layout_below="@+id/Wcart_title"
+                android:textAlignment="center"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Wcart_price"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="Small"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/smallValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Wcart_price"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="S"
+                android:textAlignment="center"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Wcart_price"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:text="Medium"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mediumValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Wcart_price"
+                android:layout_marginLeft="@dimen/_55sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="M"
+                android:textAlignment="center"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Wcart_price"
+                android:layout_marginLeft="@dimen/_80sdp"
+                android:text="Large"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/largeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Wcart_price"
+                android:layout_marginLeft="@dimen/_90sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="L"
+                android:textAlignment="center"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/extraLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Wcart_price"
+                android:layout_marginLeft="@dimen/_110sdp"
+                android:text="ExtraLarge"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_9sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/extraLargeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Wcart_price"
+                android:layout_marginLeft="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="EL"
+                android:textAlignment="center"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/WgreenTick"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_170sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/ppink_tick"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/WgreyTick"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_170sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/grey_tick"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/Wdel"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:layout_marginLeft="@dimen/_170sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/delete"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

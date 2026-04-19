@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewAll">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintVertical_bias="0"
+        />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round_corner"
+        android:padding="@dimen/_10sdp"
+        android:hint="Search here"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/viewAllRecycler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.95"
+        app:layout_constraintHeight_percent="0.75"
+        app:layout_constraintVertical_bias="0.8"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:id="@+id/select_size"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:alpha="0.5"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            app:layout_constraintWidth_percent="0.9"
+            app:layout_constraintHeight_percent="0.62">
+
+
+            <ImageView
+                android:id="@+id/popup"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/popup"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintWidth_percent="1" />
+
+
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Select the Size"
+                android:id="@+id/add_payment"
+                android:gravity="center"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.25"
+                app:layout_constraintWidth_percent="0.6" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/cross_w"
+                android:src="@drawable/cross_white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.07"
+                app:layout_constraintHeight_percent="0.07"
+                app:layout_constraintVertical_bias="0.09"
+                app:layout_constraintHorizontal_bias="0.95"/>
+
+            <TextView
+                android:id="@+id/shop_small"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Small"
+                android:padding="@dimen/_4sdp"
+                android:gravity="center"
+                android:background="@drawable/round_corner"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.25"
+                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.2"/>
+
+
+
+
+            <TextView
+                android:id="@+id/shop_medium"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Medium"
+                android:padding="@dimen/_3sdp"
+                android:gravity="center"
+                android:background="@drawable/round_corner"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.25"
+                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintHorizontal_bias="0.8"/>
+
+
+
+            <TextView
+                android:id="@+id/shop_extraLarge"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Extra Large"
+                android:padding="@dimen/_3sdp"
+                android:gravity="center"
+                android:background="@drawable/round_corner"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.25"
+                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintVertical_bias="0.65"
+                app:layout_constraintHorizontal_bias="0.8"/>
+
+
+
+
+            <TextView
+                android:id="@+id/shop_large"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Large"
+                android:padding="@dimen/_3sdp"
+                android:gravity="center"
+                android:background="@drawable/round_corner"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.25"
+                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintVertical_bias="0.65"
+                app:layout_constraintHorizontal_bias="0.2"/>
+
+
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textAllCaps="true"
+                android:backgroundTint="@color/pink"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintWidth_percent="0.5"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0.9"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

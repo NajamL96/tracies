@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/t_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <ImageView
+        android:id="@+id/Cart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/cart"
+        app:layout_constraintStart_toEndOf="@+id/t_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintVertical_bias="0.01"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/t_logo"
+        app:layout_constraintVertical_bias="0.986"
+        app:layout_constraintWidth_percent="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/pink"
+                android:gravity="center"
+                android:text="Welcome Ladies! New app users use code 20OFF for 20% off"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.07"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0."
+                app:layout_constraintWidth_percent="1" />
+
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/round_corner"
+                android:drawableRight="@drawable/search"
+                android:hint="Search here"
+                android:padding="@dimen/_10sdp"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintHorizontal_bias="0.195"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome"
+                app:layout_constraintVertical_bias="0.021"
+                app:layout_constraintWidth_percent="0.8" />
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/filter"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.07"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toEndOf="@id/search"
+                app:layout_constraintTop_toBottomOf="@+id/welcome"
+                app:layout_constraintVertical_bias="0.02"
+                app:layout_constraintWidth_percent="0.1" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/CategoriesRecyclerView"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.07"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search"
+                app:layout_constraintVertical_bias="0.02"
+                app:layout_constraintWidth_percent="0.98"/>
+
+
+<!--            <HorizontalScrollView-->
+<!--                android:id="@+id/scroll_view"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHeight_percent="0.08"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/search"-->
+<!--                app:layout_constraintVertical_bias="0.16"-->
+<!--                app:layout_constraintWidth_percent="0.95">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/textScroll"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/C_tops"-->
+<!--                        android:layout_width="@dimen/_70sdp"-->
+<!--                        android:layout_height="@dimen/_40sdp"-->
+<!--                        android:clickable="true"-->
+<!--                        android:focusable="true"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="Tops"-->
+<!--                        android:textAlignment="center" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/C_Bottoms"-->
+<!--                        android:layout_width="@dimen/_70sdp"-->
+<!--                        android:layout_height="@dimen/_40sdp"-->
+<!--                        android:text="Bottoms"-->
+<!--                        android:textAlignment="center"-->
+<!--                        app:chipBackgroundColor="@color/Chip_grey" />-->
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/graphic_tops"-->
+<!--                        android:layout_width="@dimen/_100sdp"-->
+<!--                        android:layout_height="@dimen/_40sdp"-->
+<!--                        android:text="Graphic Tops"-->
+<!--                        android:textAlignment="center"-->
+<!--                        app:chipBackgroundColor="@color/Chip_grey" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/accessories"-->
+<!--                        android:layout_width="@dimen/_100sdp"-->
+<!--                        android:layout_height="@dimen/_40sdp"-->
+<!--                        android:text="Accessories"-->
+<!--                        android:textAlignment="center"-->
+<!--                        app:chipBackgroundColor="@color/Chip_grey" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/shoes"-->
+<!--                        android:layout_width="@dimen/_70sdp"-->
+<!--                        android:layout_height="@dimen/_40sdp"-->
+<!--                        android:text="shoes"-->
+<!--                        android:textAlignment="center"-->
+<!--                        app:chipBackgroundColor="@color/Chip_grey" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/swim"-->
+<!--                        android:layout_width="@dimen/_70sdp"-->
+<!--                        android:layout_height="@dimen/_40sdp"-->
+<!--                        android:text="swim"-->
+<!--                        android:textAlignment="center"-->
+<!--                        app:chipBackgroundColor="@color/Chip_grey" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/sale"-->
+<!--                        android:layout_width="@dimen/_70sdp"-->
+<!--                        android:layout_height="@dimen/_40sdp"-->
+<!--                        android:text="sale"-->
+<!--                        android:textAlignment="center"-->
+<!--                        app:chipBackgroundColor="@color/Chip_grey" />-->
+
+<!--                </LinearLayout>-->
+<!--            </HorizontalScrollView>-->
+
+
+            <TextView
+                android:id="@+id/Vedios"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Videos"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.03"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CategoriesRecyclerView"
+                app:layout_constraintVertical_bias="0.1"
+                app:layout_constraintWidth_percent="0.2" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/VedioRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Vedios"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintWidth_percent="0.9" />
+
+
+
+            <TextView
+                android:id="@+id/CategoriesName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="Shirts"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.05"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/VedioRecyclerView"
+                app:layout_constraintVertical_bias="0.32"
+                app:layout_constraintWidth_percent="0.15" />
+
+            <TextView
+                android:id="@+id/viewAll"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="view all"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.03"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="@id/CategoriesName"
+                app:layout_constraintTop_toBottomOf="@+id/VedioRecyclerView"
+                app:layout_constraintVertical_bias="0.42"
+                app:layout_constraintWidth_percent="0.17" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/postRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.35"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CategoriesName"
+                app:layout_constraintVertical_bias="1"
+                app:layout_constraintWidth_percent="0.9" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

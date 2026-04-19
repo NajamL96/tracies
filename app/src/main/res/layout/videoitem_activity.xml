@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_90sdp"
+    android:layout_height="@dimen/_130sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.9"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.1">
+
+    <ImageView
+        android:id="@+id/ThumbNail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:src="@drawable/ic_launcher_background"
+        />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/overlay"
+            />
+        <ImageView
+            android:id="@+id/Play"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:src="@drawable/play"
+            />
+
+        <TextView
+            android:id="@+id/videoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_75sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/videoDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Date"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_10sdp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

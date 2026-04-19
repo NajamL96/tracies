@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Dashboard">
+
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/pink"
+        android:src="@drawable/welcome"
+        android:text="Welcome Ladies! New app users use code 20OFF for 20% off"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="1"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintVertical_bias="0.01"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/round_corner"
+        android:padding="@dimen/_10sdp"
+        android:hint="Search here"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintVertical_bias="0.021"
+        app:layout_constraintWidth_percent="0.8" />
+    <ImageView
+        android:id="@+id/search_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintWidth_percent="0.1"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/filter"
+        app:layout_constraintStart_toEndOf="@id/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintVertical_bias="0.02"/>
+
+    <ImageView
+        android:id="@+id/t_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <ImageView
+        android:id="@+id/Cart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/cart"
+        app:layout_constraintStart_toEndOf="@+id/t_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintVertical_bias="0.01"/>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/C_tops"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Tops"
+        android:textSelectHandle="@color/pink"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.05"/>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/C_Bottoms"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Bottoms"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.34"/>
+
+
+
+    <com.google.android.material.chip.Chip
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Graphic Tops"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.74"/>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/accessories"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Accessories"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.33"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintHorizontal_bias="0.05"/>
+
+    <com.google.android.material.chip.Chip
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="shoes"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.15"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintHorizontal_bias="0.45"/>
+
+    <com.google.android.material.chip.Chip
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="swim"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.15"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintHorizontal_bias="0.64"/>
+
+    <com.google.android.material.chip.Chip
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="sale"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.15"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintHorizontal_bias="0.83"/>
+
+
+    <TextView
+        android:id="@+id/tops"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Tops"
+        android:textStyle="bold"
+        android:textSize="@dimen/_17sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accessories"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.15"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintVertical_bias="0.02"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="view all"
+        android:textColor="@color/pink"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintStart_toStartOf="@id/tops"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.44"
+        app:layout_constraintWidth_percent="0.17"
+        app:layout_constraintHeight_percent="0.03"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:layout_constraintHeight_percent="0.43"
+        app:layout_constraintVertical_bias="0.82"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

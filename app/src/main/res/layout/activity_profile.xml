@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <ImageView
+        android:id="@+id/t_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <ImageView
+        android:id="@+id/sign_out"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.95"/>
+
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userDP"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/john"
+        app:civ_border_width="@dimen/_1sdp"
+        app:civ_border_color="@color/pink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <ImageView
+        android:id="@+id/editDP"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/edit"
+        app:layout_constraintStart_toStartOf="@id/userDP"
+        app:layout_constraintEnd_toEndOf="@id/userDP"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintVertical_bias="0.28"
+        app:layout_constraintHorizontal_bias="0.8"/>
+    <ImageView
+        android:id="@+id/num"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/num"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintVertical_bias="0.55"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+
+
+    <EditText
+        android:id="@+id/p_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.45"/>
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Enter the Adress"
+        android:paddingTop="@dimen/_18sdp"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.67"/>
+
+    <EditText
+        android:id="@+id/p_adress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Enter the Adress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.76"/>
+
+
+
+
+    <EditText
+        android:id="@+id/p_phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:paddingLeft="@dimen/_33sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Save Change"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/pink"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.78"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.9"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

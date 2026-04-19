@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_200sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/cardimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/cardimg" />
+
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/green_tick"
+        android:id="@+id/cardGtick"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        />
+    <ImageView
+        android:id="@+id/greyTick"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/grey_tick"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="4242 4242 4242 4242"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardimg"
+        android:text="CARD HOLDER"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_125sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardimg"
+        android:text="CARD HOLDER"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:id="@+id/card_holder"
+        android:layout_marginTop="@dimen/_145sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardimg"
+        android:text="VALID THRU"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_125sdp"
+        android:layout_marginLeft="@dimen/_120sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardimg"
+        android:text="MM"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:id="@+id/MM"
+        android:layout_marginTop="@dimen/_145sdp"
+        android:layout_marginLeft="@dimen/_120sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardimg"
+        android:text="/"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+
+        android:layout_marginTop="@dimen/_145sdp"
+        android:layout_marginLeft="@dimen/_145sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardimg"
+        android:text="YY"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:id="@+id/YY"
+        android:layout_marginTop="@dimen/_145sdp"
+        android:layout_marginLeft="@dimen/_160sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardimg"
+        android:text="CCV"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_125sdp"
+        android:layout_marginLeft="@dimen/_220sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardimg"
+        android:text="123"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:id="@+id/ccv"
+        android:layout_marginTop="@dimen/_145sdp"
+        android:layout_marginLeft="@dimen/_220sdp" />
+
+
+</androidx.cardview.widget.CardView>

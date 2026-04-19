@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        android:id="@+id/favorite_small"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_190sdp"
+        app:cardCornerRadius="@dimen/_14sdp"
+        app:cardElevation="@dimen/_4sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/favorite_imagePost"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/_tricies" />
+
+            <TextView
+                android:id="@+id/favorite_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/favorite_imagePost"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:singleLine="true"
+                android:text="Baby"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/f_heart"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/heart_sel"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/f_heart_un"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/heart_unsel" />
+
+            <ImageView
+                android:id="@+id/fav_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:src="@drawable/star_sel"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/fav_icon_unsel"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:src="@drawable/star_unsel" />
+
+
+            <TextView
+                android:id="@+id/favorite_disc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/favorite_title"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="$112"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/favorite_add_to_cart"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/favorite_title"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:gravity="center"
+                android:src="@drawable/cart_button" />
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

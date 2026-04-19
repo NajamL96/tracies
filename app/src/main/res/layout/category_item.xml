@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_40sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:id="@+id/CategoryItem"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:text="TextView"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingRight="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+</androidx.cardview.widget.CardView>
